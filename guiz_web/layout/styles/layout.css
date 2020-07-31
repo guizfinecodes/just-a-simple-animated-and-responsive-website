@@ -1,0 +1,393 @@
+@charset "utf-8";
+/*
+//
+//
+*/
+
+@import url("fontawesome-3.2.1.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+/* Rows
+---------------------------------------------------------------------------------------------------------------*/
+.row0, .row0 a{padding: 0 0;}
+.row1{border:solid; border-width:1px 0 1px 0;}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4{border-top:10px solid;}
+.row5{border-top:1px solid;}
+.row6{border-top: 3px solid;}
+.row7{border-bottom: 2px solid; border-top: 2px solid;}
+
+
+/* Header
+---------------------------------------------------------------------------------------------------------------*/
+#header{padding:30px 0;}
+
+#logo{font-variant:small-caps;}
+#logo h1{margin:0; padding:0; font-size:32px; line-height:32px;}
+
+
+/* Box
+---------------------------------------------------------------------------------------------------------------*/
+.box{padding:30px 0;}
+
+/*
+preloader
+*/
+
+.spinner {
+  top: 48%;
+  left: 45%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.cube1, .cube2 {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+.spinner-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #DCDCDC;
+	z-index: 999999;
+}
+
+#navbar{
+	overflow: hidden;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100;
+}
+
+.sticky + .wrapper{
+padding: 60px;
+}
+
+.toper{margin-left: 2%;}
+.toperdown{margin-right: 0;}
+.titles{text-align: center;}
+
+
+/* Content Area
+---------------------------------------------------------------------------------------------------------------*/
+#container{padding:30px 0;}
+
+/* Content */
+#container #content{}
+
+/* Comments */
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li{margin:0 0 10px 0; padding:15px;}
+#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
+#comments address{font-weight:bold;}
+#comments time{font-size:smaller;}
+#comments .comcont{display:block; margin:0; padding:0;}
+#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
+
+/* Sidebar */
+#container .sidebar{}
+
+.sidebar .sdb_holder{margin-bottom:50px;}
+.sidebar .sdb_holder:last-child{margin-bottom:0;}
+
+
+/* Footer
+---------------------------------------------------------------------------------------------------------------*/
+#footer{padding:30px 0;}
+#footer *{margin:0; padding:0;}
+#footer .title, #footer address{margin-bottom:30px;}
+#footer ul li{display:inline-block; margin-right:15px;}
+
+
+/* Copyright
+---------------------------------------------------------------------------------------------------------------*/
+#copyright{padding:30px 0;}
+#copyright p{margin:0; padding:0;}
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+/* Navigation
+---------------------------------------------------------------------------------------------------------------*/
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{line-height:normal;}
+#mainav ul{}
+#mainav ul ul{z-index:9999; position:absolute; width:160px;}
+#mainav ul ul ul{left:160px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 5px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:8px 15px; text-transform:uppercase;}
+#mainav li li a{border-width:0 0 1px 0; text-transform:none;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:11px; left:5px;}
+#mainav li li .drop::after{top:13px; left:5px;}
+#mainav ul ul{display:none;}
+#mainav ul li:hover > ul{display:block;}
+
+/* Breadcrumb */
+#breadcrumb{padding:50px 0;}
+#breadcrumb ul{margin:0; padding:0; list-style:none;}
+#breadcrumb li{display:inline-block; margin:0 6px 0 0; padding:0;}
+#breadcrumb li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px; text-transform:uppercase;}
+#breadcrumb li a::after{top:5px; right:0; content:"\f101";}
+#breadcrumb li:last-child a{margin:0; padding:0;}
+#breadcrumb li:last-child a::after{display:none;}
+
+/* Sidebar Navigation */
+.sidebar nav{display:block; width:100%;}
+.sidebar nav li{margin:0 0 3px 0; padding:0;}
+.sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 1px 0;}
+.sidebar nav a::after{top:9px; left:5px; content:"\f101";}
+.sidebar nav ul ul a{padding-left:35px;}
+.sidebar nav ul ul a::after{left:25px;}
+.sidebar nav ul ul ul a{padding-left:55px;}
+.sidebar nav ul ul ul a::after{left:45px;}
+
+/* Pagination */
+.pagination{display:block; width:100%; text-align:center; clear:both;}
+.pagination li{display:inline-block; margin:0 2px 0 0;}
+.pagination li:last-child{margin-right:0;}
+.pagination a, .pagination strong{display:block; padding:8px 11px; border:1px solid; font-weight:normal;}
+
+
+/* Forms
+---------------------------------------------------------------------------------------------------------------*/
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+label, input, textarea, select{display:block; resize:none; font-size:inherit; box-sizing:border-box;}
+label{margin-bottom:5px;}
+
+/* Comment Area */
+#comments form{display:block; width:100%;}
+#comments input, #comments textarea{width:100%; padding:10px; border:1px solid;}
+#comments textarea{overflow:auto;}
+#comments div{margin-bottom:15px;}
+#comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
+
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
+
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+.faico a, #mainav *, #backtotop{transition:all .3s ease-in-out;}
+
+/* Tables
+---------------------------------------------------------------------------------------------------------------*/
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top; box-sizing:border-box;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+
+/* Gallery
+---------------------------------------------------------------------------------------------------------------*/
+#gallery{display:block; width:100%; margin-bottom:50px;}
+#gallery figure figcaption{display:block; width:100%; clear:both;}
+#gallery li{margin-bottom:30px;}
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:0 2px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:30px; height:30px; line-height:30px; font-size:16px; text-align:center;}
+
+.faico a{color:inherit; background-color:#3C3C3C;}
+.faico a:hover{color:#FFFFFF;}
+
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-instagram:hover{background-color:#3F729B;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-tumblr:hover{background-color:#34526F;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+
+/* Colours
+---------------------------------------------------------------------------------------------------------------*/
+
+body{color:#888888; background-color:#292929;}
+
+a{color:green;}
+a:hover{color:blue;}
+
+hr, .borderedbox{border-color:orange;}
+
+label span{color:#FF0000; background-color:inherit;}
+
+.overlay{color:#FFFFFF; background-color:rgba(0,0,0,.6);}
+
+.bg_red{color:#FFFFFF; background-color:darkorange; }
+
+
+/* Rows */
+.row1, .row1 a{color:#888888; background-color:#133;}
+.row1{border-color:#999 transparent #D7D7D7;}
+.row2, .row2 a{color:#FFFFFF; background-color:transparent;}
+.row3{color:#888888; background-color:#FFFFFF;}
+.row4{color:#888888; background-color:#373737; border-color:#999;}
+.row5, .row5 a{color:#888888; background-color:#292929;}
+.row5{border-color:#575757;}
+.row6{color: red; border-color: orange;}
+.row7{color: #333; border-color: #666;}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#FFFFFF; background-color:#222;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#AC2629;}
+
+#breadcrumb li:last-child a{color:#AC2629;}
+
+#container .sidebar nav a{color:#888888; border-color:#D7D7D7;}
+#container .sidebar nav a:hover{color:#AC2629;}
+
+.pagination a, .pagination strong{border-color:#D7D7D7;}
+.pagination .current{color:#FFFFFF; background-color:#000000;}
+
+#backtotop{color:#FFFFFF; background-color:#A7C353;}
+
+/* Tables + Comments */
+table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
+th{color:#FFFFFF; background-color:#373737;}
+tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+table a, #comments a{background-color:inherit;}
+
+.overlay #comments input, .overlay #comments textarea{color:inherit; background:none;}
+
+
+
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Smartphone + Tablet
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:180px) and (max-width:750px) {
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0; max-width:95%;}
+	.fl_left, .fl_right{display:block; float:none; max-width:95%;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter, .layer{display:block; float:none; max-width:95%; margin:0 10px 30px 0; padding:0;}
+
+	#topbar, #header, #comments{text-align:center;}
+	.titles{float: left; margin-left: 10%;}
+	.box{margin-left: 10px; margin-right: 10px; display: text-align: center;}
+	.toper{text-align: center; margin-left: 10px;}
+	.toperdown{text-align: center; margin-left: 8%;}
+	.two_third{width:22.6441717791411%;}
+	.one_third{width: 26.6441717791411%;}
+	#container{margin-left: 10px; }
+}
+
+@media screen and (min-width:180px) and (max-width:900px) {
+	#topbar, #header, #breadcrumb, .container, #footer, #comments, #copyright{max-width:95%;}
+
+	#topbar{padding:0 0 10px;}
+	#topbar ul{margin-top:10px;}
+
+	#header{padding:12px 0;}
+	#header #logo h1{margin:0;c}
+
+	#mainav{margin-top:6px;}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+
+	#breadcrumb{}
+
+	.container{}
+	#comments, .box{margin-left: 10px; margin-right: 10px; display: text-align: center;}
+	#comments input[type="reset"]{margin-top:10px; max-width:95%;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+	
+	.guiz{float: left; margin-left: 3px;}
+	
+
+	#footer{padding-bottom:20px;}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px) {
+	#topbar, #header, #breadcrumb, .container, .layer, #comments, #footer, #copyright{max-width:95%;}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:100%;) {
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+}
+
